@@ -1,0 +1,90 @@
+2017-07-25 15:38:18,350:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2017-07-25 15:38:18,351:INFO:discord.client: on_ready has successfully been registered as an event
+2017-07-25 15:38:18,352:INFO:discord.client: on_message has successfully been registered as an event
+2017-07-25 15:38:18,352:INFO:discord.client: on_message_edit has successfully been registered as an event
+2017-07-25 15:38:18,353:INFO:discord.client: logging in using static token
+2017-07-25 15:38:18,785:DEBUG:discord.http: GET https://discordapp.com/api/v6/users/@me with None has returned 200
+2017-07-25 15:38:18,786:DEBUG:discord.http: GET https://discordapp.com/api/v6/users/@me has received {'username': 'MandMbot', 'verified': True, 'mfa_enabled': False, 'bot': True, 'id': '339275431553269760', 'avatar': 'cf03d16ba518097d609b5503d1b7d88b', 'discriminator': '6213', 'email': None}
+2017-07-25 15:38:18,809:DEBUG:discord.http: GET https://discordapp.com/api/v6/gateway with None has returned 200
+2017-07-25 15:38:18,810:DEBUG:discord.http: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
+2017-07-25 15:38:19,095:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+2017-07-25 15:38:19,095:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:38:19,096:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['discord-gateway-prd-1-14']}}
+2017-07-25 15:38:19,097:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:38:19,098:INFO:discord.gateway: sent the identify payload to create the websocket
+2017-07-25 15:38:19,188:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:38:19,188:DEBUG:discord.gateway: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'MandMbot', 'mfa_enabled': False, 'id': '339275431553269760', 'email': None, 'discriminator': '6213', 'bot': True, 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'session_id': 'f72d801633fc622ced6a178941d5fabb', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '339289798835568650'}], '_trace': ['discord-gateway-prd-1-14', 'discord-sessions-prd-1-10']}}
+2017-07-25 15:38:19,189:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:38:19,191:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:38:19,192:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [], 'verification_level': 0, 'unavailable': False, 'splash': None, 'roles': [{'position': 0, 'permissions': 104324161, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '339289798835568650', 'hoist': False, 'color': 0}, {'position': 2, 'permissions': 2138561777, 'name': 'weeb', 'mentionable': False, 'managed': False, 'id': '339462632446754818', 'hoist': True, 'color': 2123412}, {'position': 3, 'permissions': 104324169, 'name': 'dev', 'mentionable': False, 'managed': False, 'id': '339462637454884876', 'hoist': True, 'color': 15158332}, {'position': 1, 'permissions': 36897792, 'name': 'normy', 'mentionable': True, 'managed': False, 'id': '339462931609550858', 'hoist': True, 'color': 5533306}], 'region': 'us-east', 'presences': [{'user': {'id': '221788119605706754'}, 'status': 'online', 'game': {'type': 0, 'name': 'Calculator'}}, {'user': {'id': '339275431553269760'}, 'status': 'online', 'game': None}], 'owner_id': '221788119605706754', 'name': 'testdomain', 'mfa_level': 0, 'members': [{'user': {'username': 'rawr3mmadinosaur', 'id': '221788119605706754', 'discriminator': '2055', 'avatar': None}, 'roles': ['339462637454884876'], 'nick': None, 'mute': False, 'joined_at': '2017-07-25T06:16:31.765000+00:00', 'deaf': False}, {'user': {'username': 'MandMbot', 'id': '339275431553269760', 'discriminator': '6213', 'bot': True, 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'roles': ['339462632446754818'], 'nick': 'MandM (music and memes)', 'mute': False, 'joined_at': '2017-07-25T06:16:46.007000+00:00', 'deaf': False}], 'member_count': 2, 'large': False, 'joined_at': '2017-07-25T06:16:46.007000+00:00', 'id': '339289798835568650', 'icon': None, 'features': [], 'explicit_content_filter': 0, 'emojis': [], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': None, 'position': 0, 'permission_overwrites': [], 'name': 'general', 'last_message_id': '339491437630717955', 'id': '339289798835568650'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'name': 'General', 'id': '339289798835568651', 'bitrate': 64000}], 'application_id': None, 'afk_timeout': 300, 'afk_channel_id': None}}
+2017-07-25 15:38:19,192:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:38:19,193:DEBUG:discord.client: Dispatching event server_available
+2017-07-25 15:38:20,557:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:38:20,568:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '221788119605706754', 'timestamp': 1501011502, 'channel_id': '339289798835568650'}}
+2017-07-25 15:38:20,568:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:38:20,570:DEBUG:discord.client: Dispatching event typing
+2017-07-25 15:38:21,180:DEBUG:discord.client: Dispatching event ready
+2017-07-25 15:39:00,349:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
+2017-07-25 15:39:00,393:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:00,393:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2017-07-25 15:39:00,394:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:33,632:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:33,632:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 4, 'op': 0, 'd': {'user_id': '221788119605706754', 'timestamp': 1501011575, 'channel_id': '339289798835568650'}}
+2017-07-25 15:39:33,633:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:33,633:DEBUG:discord.client: Dispatching event typing
+2017-07-25 15:39:34,375:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:34,376:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:36.105000+00:00', 'pinned': False, 'nonce': '339491890246189056', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491898702168065', 'embeds': [], 'edited_timestamp': None, 'content': 'new mes', 'channel_id': '339289798835568650', 'author': {'username': 'rawr3mmadinosaur', 'id': '221788119605706754', 'discriminator': '2055', 'avatar': None}, 'attachments': []}}
+2017-07-25 15:39:34,376:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:34,377:DEBUG:discord.client: Dispatching event message
+2017-07-25 15:39:38,367:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:38,367:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_PINS_UPDATE', 's': 6, 'op': 0, 'd': {'last_pin_timestamp': '2017-07-25T19:39:40.125800+00:00', 'channel_id': '339289798835568650'}}
+2017-07-25 15:39:38,369:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:38,369:INFO:discord.gateway: Unhandled event CHANNEL_PINS_UPDATE
+2017-07-25 15:39:38,370:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:38,372:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 7, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:36.105000+00:00', 'pinned': True, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491898702168065', 'embeds': [], 'edited_timestamp': None, 'content': 'new mes', 'channel_id': '339289798835568650', 'author': {'username': 'rawr3mmadinosaur', 'id': '221788119605706754', 'discriminator': '2055', 'avatar': None}, 'attachments': []}}
+2017-07-25 15:39:38,373:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:38,375:DEBUG:discord.client: Dispatching event message_edit
+2017-07-25 15:39:38,378:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:38,382:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 8, 'op': 0, 'd': {'type': 6, 'tts': False, 'timestamp': '2017-07-25T19:39:40.130000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491915584110592', 'embeds': [], 'edited_timestamp': None, 'content': '', 'channel_id': '339289798835568650', 'author': {'username': 'rawr3mmadinosaur', 'id': '221788119605706754', 'discriminator': '2055', 'avatar': None}, 'attachments': []}}
+2017-07-25 15:39:38,383:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:38,384:DEBUG:discord.client: Dispatching event message
+2017-07-25 15:39:38,498:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:38,500:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 9, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:40.231000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491916007735300', 'embeds': [], 'edited_timestamp': None, 'content': 'oi! change that back', 'channel_id': '339289798835568650', 'author': {'username': 'MandMbot', 'id': '339275431553269760', 'discriminator': '6213', 'bot': True, 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'attachments': []}}
+2017-07-25 15:39:38,500:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:38,501:DEBUG:discord.client: Dispatching event message
+2017-07-25 15:39:38,530:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages with {"content":"oi! change that back"} has returned 200
+2017-07-25 15:39:38,531:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-25T19:39:40.231000+00:00', 'mention_everyone': False, 'id': '339491916007735300', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'MandMbot', 'discriminator': '6213', 'bot': True, 'id': '339275431553269760', 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'mention_roles': [], 'content': 'oi! change that back', 'channel_id': '339289798835568650', 'mentions': [], 'type': 0}
+2017-07-25 15:39:38,680:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages with {"content":"this is what is was before: new mes"} has returned 200
+2017-07-25 15:39:38,683:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-25T19:39:40.408000+00:00', 'mention_everyone': False, 'id': '339491916750127104', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'MandMbot', 'discriminator': '6213', 'bot': True, 'id': '339275431553269760', 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'mention_roles': [], 'content': 'this is what is was before: new mes', 'channel_id': '339289798835568650', 'mentions': [], 'type': 0}
+2017-07-25 15:39:38,684:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:38,685:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 10, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:40.408000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491916750127104', 'embeds': [], 'edited_timestamp': None, 'content': 'this is what is was before: new mes', 'channel_id': '339289798835568650', 'author': {'username': 'MandMbot', 'id': '339275431553269760', 'discriminator': '6213', 'bot': True, 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'attachments': []}}
+2017-07-25 15:39:38,685:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:38,687:DEBUG:discord.client: Dispatching event message
+2017-07-25 15:39:41,601:DEBUG:discord.gateway: Keeping websocket alive with sequence 10
+2017-07-25 15:39:41,655:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:41,656:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2017-07-25 15:39:41,656:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:49,012:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:49,012:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 11, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:36.105000+00:00', 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491898702168065', 'embeds': [], 'edited_timestamp': None, 'content': 'new mes', 'channel_id': '339289798835568650', 'author': {'username': 'rawr3mmadinosaur', 'id': '221788119605706754', 'discriminator': '2055', 'avatar': None}, 'attachments': []}}
+2017-07-25 15:39:49,013:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:49,014:DEBUG:discord.client: Dispatching event message_edit
+2017-07-25 15:39:49,014:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:49,015:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_PINS_UPDATE', 's': 12, 'op': 0, 'd': {'last_pin_timestamp': None, 'channel_id': '339289798835568650'}}
+2017-07-25 15:39:49,015:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:49,015:INFO:discord.gateway: Unhandled event CHANNEL_PINS_UPDATE
+2017-07-25 15:39:49,141:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages with {"content":"oi! change that back"} has returned 200
+2017-07-25 15:39:49,144:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-25T19:39:50.876000+00:00', 'mention_everyone': False, 'id': '339491960656101376', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'MandMbot', 'discriminator': '6213', 'bot': True, 'id': '339275431553269760', 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'mention_roles': [], 'content': 'oi! change that back', 'channel_id': '339289798835568650', 'mentions': [], 'type': 0}
+2017-07-25 15:39:49,154:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:49,155:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 13, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:50.876000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491960656101376', 'embeds': [], 'edited_timestamp': None, 'content': 'oi! change that back', 'channel_id': '339289798835568650', 'author': {'username': 'MandMbot', 'id': '339275431553269760', 'discriminator': '6213', 'bot': True, 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'attachments': []}}
+2017-07-25 15:39:49,155:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:49,155:DEBUG:discord.client: Dispatching event message
+2017-07-25 15:39:49,240:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages with {"content":"this is what is was before: new mes"} has returned 200
+2017-07-25 15:39:49,240:DEBUG:discord.http: POST https://discordapp.com/api/v6/channels/339289798835568650/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-25T19:39:50.944000+00:00', 'mention_everyone': False, 'id': '339491960941182980', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'MandMbot', 'discriminator': '6213', 'bot': True, 'id': '339275431553269760', 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'mention_roles': [], 'content': 'this is what is was before: new mes', 'channel_id': '339289798835568650', 'mentions': [], 'type': 0}
+2017-07-25 15:39:49,276:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:39:49,277:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 14, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-25T19:39:50.944000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '339491960941182980', 'embeds': [], 'edited_timestamp': None, 'content': 'this is what is was before: new mes', 'channel_id': '339289798835568650', 'author': {'username': 'MandMbot', 'id': '339275431553269760', 'discriminator': '6213', 'bot': True, 'avatar': 'cf03d16ba518097d609b5503d1b7d88b'}, 'attachments': []}}
+2017-07-25 15:39:49,278:DEBUG:discord.client: Dispatching event socket_response
+2017-07-25 15:39:49,278:DEBUG:discord.client: Dispatching event message
+2017-07-25 15:40:22,852:DEBUG:discord.gateway: Keeping websocket alive with sequence 14
+2017-07-25 15:40:22,905:DEBUG:discord.client: Dispatching event socket_raw_receive
+2017-07-25 15:40:22,905:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2017-07-25 15:40:22,906:DEBUG:discord.client: Dispatching event socket_response
