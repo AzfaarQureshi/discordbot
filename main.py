@@ -2,6 +2,9 @@ import discord
 import asyncio
 from discord.ext import commands
 import logging
+import simplejson as json
+import requests
+
 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
@@ -15,27 +18,16 @@ bot = commands.Bot(command_prefix='//', description=description)
 
 @bot.event
 async def on_ready():
-	print('Instance running')
-	print('instance username:' + bot.user.name)
-	print('instance userid: ' + bot.user.id)
-	print('------')
+    print('Instance running')
+    print(bot.user.name)
+    print(bot.user.id)
+    print('------')
 
 @bot.command()
 async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
 
-@bot.command()
-async def roll(ctx, dice: str):
-    """Rolls a dice in NdN format."""
-    try:
-        rolls, limit = map(int, dice.split('d'))
-    except Exception:
-        await ctx.send('Format has to be in NdN!')
-        return
-
-    result = ', '.join(str(random.randint(1, limit)) for r in range(rolls))
-    await ctx.send(result)
 
 @bot.command(description='For when you wanna settle the score some other way')
 async def choose(ctx, *choices: str):
@@ -65,5 +57,13 @@ async def cool(ctx):
 async def _bot(ctx):
     """Is the bot cool?"""
     await ctx.send('Yes, the bot is cool.')
+
+
+@bot.command()
+async def memes(ctx):
+    r = requests.get("https://api.imgflip.com/get_memes")
+    print(r.json())
+   # await ctx.send(r.json())
+
 
 bot.run('MzM5Mjc1NDMxNTUzMjY5NzYw.DFjtMw.07IyneSoNDq2knFJ0jpGNv3pAvg')
