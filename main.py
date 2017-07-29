@@ -14,7 +14,7 @@ logger.addHandler(handler)
 
 description = '''Music and Memes, though it has a bunch of other random functions too'''
 
-bot = commands.Bot(command_prefix='//', description=description)
+bot = commands.Bot(command_prefix='?', description=description)
 
 @bot.event
 async def on_ready():
@@ -62,8 +62,45 @@ async def _bot(ctx):
 @bot.command()
 async def memes(ctx):
     r = requests.get("https://api.imgflip.com/get_memes")
-    print(r.json())
-   # await ctx.send(r.json())
+    jobj = r.json()
+    memes = jobj['data']['memes']
+    length = len(memes)
+    memename = ""
+    memename2 = ""
+    counter = 0
+    switch = False
+    for x in range (0, 50):
+        if switch == False:
+            memename = memename + str(x) + ". " + memes[x]['name'] + " || "
+            switch = True
+        elif switch == True:
+            memename = memename + str(x) + ". " + memes[x]['name'] + " \n"
+            switch = False
+    for x in range (50, 100):
+        if switch == False:
+            memename2 = memename2 + str(x) + ". " + memes[x]['name'] + " || "
+            switch = True
+        elif switch == True:
+            memename2 = memename2 + str(x) + ". " + memes[x]['name'] + " \n"
+            switch = False
+    await ctx.send('_**LIST OF AVAILABLE MEMES**_')
+    await ctx.send (memename)
+    await ctx.send (memename2 + '\n BROUGHT TO YOU BY POPULAR DEMAND \n 100. Mocking spongebob')
+    await ctx.send('to create a meme use "?meme" followed by meme number and "toptext" "bottomtext"')
+    
+@bot.command()
+async def meme(ctx, reqid : int, toptext : str, botext : str):
+    r = requests.get("https://api.imgflip.com/get_memes")
+    jobj = r.json()
+    memes = jobj['data']['memes']
+    if reqid == 100:
+        id = 102156234
+    else:
+        id = memes[reqid]['id']
+    v = requests.post('https://api.imgflip.com/caption_image', data = {'template_id':id, 'username' : 'devaccount', 'password':'azfaar123', 'text0' : toptext, 'text1': botext})
+    response = v.json()
+    print (response)
+    await ctx.send(response['data']['url'])
 
-
+    
 bot.run('MzM5Mjc1NDMxNTUzMjY5NzYw.DFjtMw.07IyneSoNDq2knFJ0jpGNv3pAvg')
