@@ -85,8 +85,8 @@ async def memes(ctx):
             switch = False
     await ctx.send('_**LIST OF AVAILABLE MEMES**_')
     await ctx.send (memename)
-    await ctx.send (memename2 + '\n BROUGHT TO YOU BY POPULAR DEMAND \n 100. Mocking spongebob')
-    await ctx.send('to create a meme use "?meme" followed by meme number and "toptext" "bottomtext"')
+    await ctx.send (memename2 + '\n BROUGHT TO YOU BY POPULAR DEMAND \n 100. Mocking spongebob || 101. Nick Compton \n 102. TEEM 10 || 103. yz"s roadsplit meme \n 104. Daenaerys "the fuck you just say?" face || 105. house tyrell lady')
+    await ctx.send('106. that cersei face')
     
 @bot.command()
 async def meme(ctx, reqid : int, toptext : str, botext : str):
@@ -95,6 +95,18 @@ async def meme(ctx, reqid : int, toptext : str, botext : str):
     memes = jobj['data']['memes']
     if reqid == 100:
         id = 102156234
+    elif reqid == 101:
+        id = 109671639
+    elif reqid == 102:
+        id = 108345903
+    elif reqid == 103:
+        id = 70352844
+    elif reqid == 104:
+        id = 109746006
+    elif reqid == 105:
+        id = 109746769
+    elif reqid == 106:
+        id = 109816968
     else:
         id = memes[reqid]['id']
     v = requests.post('https://api.imgflip.com/caption_image', data = {'template_id':id, 'username' : 'devaccount', 'password':'azfaar123', 'text0' : toptext, 'text1': botext})
